@@ -9,8 +9,9 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "user")
-public class user {
+@Table(name = "user", schema = "common")
+public class UserInfo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
